@@ -1,0 +1,14 @@
+[
+  {
+    "type": "ammunition_type",
+    "id": ".998",
+    "name": ".998 bolt",
+    "default": "standard_bolt"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "cyclone_missle",
+    "name": "missles",
+    "default": "cyclone_missle"
+  }
+]

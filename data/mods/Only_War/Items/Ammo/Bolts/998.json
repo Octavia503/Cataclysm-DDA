@@ -1,0 +1,92 @@
+[
+  {
+    "id": "EXPLOSIVE_bolt",
+    "type": "ammo_effect",
+    "explosion": { "power": 200, "distance_factor": 0.000000000000000000000000000000000000005 }
+  },
+  {
+    "id": "EXPLOSIVE_FRAG_STORM",
+    "type": "ammo_effect",
+    "explosion": { "power": 50, "distance_factor": 0.0000000000000000000000000000000000005, "shrapnel": { "casing_mass": 250, "fragment_mass": 0.08 } }
+  },
+  {
+    "id": "standard_bolt",
+    "type": "AMMO",
+    "name": { "str_sp": ".998 Standard Bolt" },
+    "description": "In bolts, a tiny amount of conventional explosive charge is utilised alongside rocket propellant. This charge is just strong enough to force the bolt out of the barrel and ignite its propellant. The rocket-propellant is carefully fused to ignite just after leaving the barrel, alleviating any possibility of pressure build-up. The bolt then accelerates away towards the target under its own power. Standard Bolter ammunition is designed to penetrate the target and then detonate, causing immense damage and leaving little opportunity for survival.",
+    "weight": "100 g",
+    "volume": "400 ml",
+    "longest_side": "152 mm",
+    "price": 6000,
+    "price_postapoc": 8000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "vacuum_carbide" ],
+    "symbol": "=",
+    "color": "blue",
+    "count": 20,
+    "stack_size": 30,
+    "ammo_type": ".998",
+    "damage": { "damage_type": "bullet", "amount": 200, "armor_penetration": 100 },
+    "dispersion": 15,
+    "recoil": 2000,
+    "effects": [ "EXPLOSIVE_bolt" ]
+  },
+  {
+    "id": "hellfire_bolt",
+    "type": "AMMO",
+    "description": "Hellfire Rounds have devastating results on organic matter, as the rounds were developed to combat the Tyranids. The core and tip are replaced with a vial of mutagenic acid with thousands of needles that fire into the target upon the shattering of the vial, pumping the acid into the foe. They were originally developed to be fired as single specialised rounds by a Heavy Bolter with an area of effect, but have also been downsized for standard calibre Bolters, where they function as direct-impact penetrators instead.",
+    "copy-from": "standard_bolt",
+    "name": ".998 Hellfire Bolt",
+    "damage": [ {"damage_type": "bullet", "amount": 100, "armor_penetration": 75 }, {"damage_type": "acid", "amount": 100}]
+  },
+  {
+    "id": "inferno_bolt",
+    "type": "AMMO",
+    "description": "Inferno Bolts are designed to immolate their targets and destroy them with superheated chemical fire. The dense core of the standard bolt is replaced with an oxy-phosphorous gel, derived from promethium. It should be noted that despite having the same name, Imperial Inferno Bolt rounds are unrelated to the Inferno Bolts used by the Chaos Space Marines of the Thousand Sons Traitor Legion, which are actually psychically-bound slugs that release arcane energies upon impact. These energies react explosively with a living target, but not against psychic Blanks or inanimate objects.",
+    "copy-from": "standard_bolt",
+    "name": ".998 Inferno Bolt",
+    "damage": [ {"damage_type": "bullet", "amount": 100, "armor_penetration": 75 }, {"damage_type": "heat", "amount": 100}],
+    "effects": [ "IGNITE", "EXPLOSIVE_bolt" ]
+  },
+  {
+    "id": "karken_penetrator_bolt",
+    "type": "AMMO",
+    "description": "Kraken Penetrator Rounds are powerful armour-piercing rounds. The dense metallic core is replaced by a solid adamantium core and uses a heavier main charge. Upon impact, the outer casing peels away and the high velocity adamantium needle accelerates into the victim, where the larger detonator propels shards of super hardened metal further into the wound. These rounds are effective against heavily-armoured infantry and lightly-armoured vehicles.",
+    "copy-from": "standard_bolt",
+    "name": ".998 Karken Penetrator Bolt",
+    "damage": [ {"damage_type": "bullet", "amount": 180, "armor_penetration": 200 } ]
+  },
+  {
+    "id": "DRAGONFIRE",
+    "type": "ammo_effect",
+    "aoe": { "field_type": "fd_fire", "intensity_min": 3, "intensity_max": 3, "size": 4 },
+    "explosion": { "power": 150, "distance_factor": 0.3, "fire": true }
+  },
+  {
+    "id": "dragonfire_bolt",
+    "type": "AMMO",
+    "description": "Dragonfire Bolts are hollow-shelled bolts used by Sternguard Veterans that unleash a gout of superheated, volatile gas that explodes moments later. The use of Dragonfire Bolts can eliminate the value of cover for enemy troops as any targets struck receive full damage even when partially protected by cover.",
+    "copy-from": "standard_bolt",
+    "name": ".998 Dragonfire Bolt",
+    "damage": [ {"damage_type": "bullet", "amount": 100, "armor_penetration": 75 } ],
+    "effects": [ "DRAGONFIRE"]
+  },
+  {
+    "id": "metal_storm_bolt",
+    "type": "AMMO",
+    "description": "Metal Storm Frag Rounds are best used against multiple lightly-armoured targets. They detonate before impact and spray shrapnel, shredding their victims. A proximity detonator replaces the mass-reactive cap, and the diamantine tip and dense metallic core are replaced with an increased charge and fragmentation casing. They are similar to flak rounds and are used against large clusters of enemies.",
+    "copy-from": "standard_bolt",
+    "name": ".998 Metal Storm Frag Bolt",
+    "damage": [ {"damage_type": "bullet", "amount": 100, "armor_penetration": 75 } ],
+    "effects": [ "EXPLOSIVE_FRAG_STORM" ]
+  },
+  {
+    "id": "tempest_bolt",
+    "type": "AMMO",
+    "description": "Incorporate tiny plasma shock generators that emit electromagnetic and thermal radiation when the shell detonates. Produced only on Mars, Tempest shells are noted as particularly effective against machines and mechanical targets",
+    "copy-from": "standard_bolt",
+    "name": ".998 Tempest Bolt",
+    "damage": [ {"damage_type": "bullet", "amount": 100, "armor_penetration": 75 }, {"damage_type": "electric", "amount": 100}]
+  }
+]
+

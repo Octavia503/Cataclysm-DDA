@@ -97,6 +97,7 @@ const flag_id flag_EXO_BOOT_PLATE( "EXO_BOOT_PLATE" );
 const flag_id flag_EXO_GLOVE_PLATE( "EXO_GLOVE_PLATE" );
 const flag_id flag_EXO_HELMET_GADGET( "EXO_HELMET_GADGET" );
 const flag_id flag_EXO_HELMET_PLATE( "EXO_HELMET_PLATE" );
+const flag_id flag_EXO_SHOULDER_GADGET( "EXO_SHOULDER_GADGET" );
 const flag_id flag_EXO_LARGE_GADGET( "EXO_LARGE_GADGET" );
 const flag_id flag_EXO_LEG_PLATE( "EXO_LEG_PLATE" );
 const flag_id flag_EXO_MEDIUM_GADGET( "EXO_MEDIUM_GADGET" );

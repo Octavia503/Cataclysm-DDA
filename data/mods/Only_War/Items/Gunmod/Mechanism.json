@@ -1,0 +1,23 @@
+[
+  {
+    "id": "bolter_targeting",
+    "weight": "200 g",
+    "volume": "300 ml",
+    "integral_volume": "0 ml",
+    "integral_weight": " 150 g",
+    "price": 50000,
+    "price_postapoc": 3000,
+    "type": "GUNMOD",
+    "material": [ "plastic" ],
+    "symbol": ":",
+    "color": "green",
+    "location": "mechanism",
+    "mod_targets": [ "bolter", "heavy_bolter", "storm_bolter" ],
+    "name": { "str_sp": "Cawl Pattern Overhaul" },
+    "sight_dispersion": 10,
+    "field_of_view": 360,
+    "aim_speed_modifier": 100,
+    "install_time": "1 s",
+    "description": "This experimental computer system can coordinate the integrated equipment of the HWP. Using motorized adjustors, gyroscopes, laser designator, and advanced scope mounted cameras to automate aiming and firing. Simply aim the rifle near the target, and it will do the rest."   
+  }
+]

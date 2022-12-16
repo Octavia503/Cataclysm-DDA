@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "only_war",
+    "name": "Only War",
+    "authors": [ "Octavia" ],
+    "description": "A 40k story set in the cataclysm.",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]

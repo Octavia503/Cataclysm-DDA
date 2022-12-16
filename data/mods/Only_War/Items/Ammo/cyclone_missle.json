@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cyclone_missle",
+    "type": "AMMO",
+    "name": { "str_sp": "Cyclone missle" },
+    "description": "ong enough to force the bolt out of the barrel and ignite its propellant. The rocket-propellant is carefully fused to ignite just after leaving the barrel, alleviating any possibility of pressure build-up. The bolt then accelerates away towards the target under its own power. Standard Bolter ammunition is designed to penetrate the target and then detonate, causing immense damage and leaving little opportunity for survival.",
+    "weight": "100 g",
+    "volume": "400 ml",
+    "longest_side": "152 mm",
+    "price": 6000,
+    "price_postapoc": 8000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "vacuum_carbide" ],
+    "symbol": "=",
+    "color": "blue",
+    "count": 20,
+    "stack_size": 30,
+    "ammo_type": "cyclone_missle"
+  }
+]

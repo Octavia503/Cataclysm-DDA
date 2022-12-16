@@ -1,0 +1,85 @@
+[
+	  {
+    "id": "power_sword",
+    "type": "TOOL",
+    "looks_like": "broadsword",
+    "name": { "str": "Power Sword (off)" },
+    "description": "Power Swords are one of the preeminent types of Power Weapons. When its power cell is activated, the blade becomes sheathed in a lethal haze of a disruptive energy field. This field allows the blade to easily rip through armor and flesh alike.",
+    "weight": "5000 g",
+    "volume": "1750 ml",
+    "longest_side": "100 cm",
+    "bashing": 1,
+    "cutting": 40,
+    "to_hit": { "grip": "weapon", "length": "long", "surface": "line", "balance": "good" },
+    "symbol": "/",
+    "color": "blue",
+    "material": [ "vacuum_carbide" ],
+    "techniques": [ "WBLOCK_3", "PRECISE", "DIVIDE" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ],
+    "weapon_category": [ "MEDIUM_SWORDS" ],
+    "price": 200000,
+    "ammo": "battery",
+    "charges_per_use": 1,
+    "pocket_data": 
+      [
+        { "pocket_type": 
+            "MAGAZINE_WELL", 
+            "holster": true, 
+            "item_restriction": [ "afs_cartridge", "afs_archeotech_cartridge" ] }
+      ],
+    "use_action": 
+        { 
+      "target": "power_sword_on", 
+      "msg": "You power on the sword.", 
+      "active": true, 
+      "need_charges": 1,
+      "type": "transform",
+      "need_wielding": true,
+      "menu_text": "Power On" 
+        },
+    "relic_data": {
+     "passive_effects": [
+        {
+        "has": "WIELD",
+        "condition": "active",
+        "values": [
+            { "value": "ITEM_DAMAGE_PURE", "add": 250 }
+         ] 
+     }
+    ]
+   }
+  },
+  {
+    "id": "power_sword_on",
+    "type": "TOOL",
+    "copy-from": "power_sword",
+    "name": "Power Sword (on)",
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 10 ] ],
+    "flags": [ "UNBREAKABLE_MELEE", "DURABLE_MELEE" ],
+    "power_draw": "10000 mW",
+    "bashing": 1,
+    "cutting": 75,
+    "revert_to": "power_sword",
+    "use_action": 
+       { 
+      "target": "power_sword", 
+      "msg": "You turn off the sword.", 
+      "active": false, 
+      "type": "transform",
+      "need_wielding": true,
+      "menu_text": "Turn Off" 
+       },  
+    "relic_data": {
+     "passive_effects": [
+        {
+        "has": "WIELD",
+        "condition": "active",
+        "values": [
+            { "value": "ITEM_DAMAGE_PURE", "add": 250 }
+         ] 
+     }
+    ]
+   }
+  }
+]

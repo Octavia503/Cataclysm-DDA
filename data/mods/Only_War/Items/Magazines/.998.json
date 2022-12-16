@@ -1,0 +1,69 @@
+[
+	  {
+    "id": "bolter_mag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "20 Round Bolter Magazine" },
+    "description": "A 20-round magazine for use with a Astartes Godwyn MK Vb Bolter.",
+    "weight": "1800 g",
+    "volume": "500 ml",
+    "longest_side": "550 mm",
+    "price": 1200,
+    "price_postapoc": 1000,
+    "material": [ "vacuum_carbide" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ ".998" ],
+    "flags": [ "MAG_BULKY" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { ".998": 20 } } ]
+  },
+  {
+    "id": "storm_bolter_mag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "20 Round Bolter Magazine" },
+    "description": "A 60-round drum magazine for use with a Mark IIIc Pattern Storm Bolter.",
+    "weight": "1800 g",
+    "volume": "500 ml",
+    "longest_side": "550 mm",
+    "price": 1200,
+    "price_postapoc": 1000,
+    "material": [ "vacuum_carbide" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ ".998" ],
+    "flags": [ "MAG_BULKY" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { ".998": 40 } } ]
+  },
+  {
+    "id": "ammolinkbolt",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": "heavy bolter ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "beltbolt" }
+  },
+  {
+    "id": "beltbolt",
+    "copy-from": "magazine_belt",
+    "type": "MAGAZINE",
+    "name": { "str": "Heavy Bolter ammo belt" },
+    "ammo_type": [ ".998" ],
+    "capacity": 200,
+    "count": 200,
+    "default_ammo": "standard_bolt",
+    "linkage": "ammolinkbolt",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": false, "ammo_restriction": { ".998": 200 } } ]
+  },
+  {
+    "id": "storm_beltbolt",
+    "copy-from": "magazine_belt",
+    "type": "MAGAZINE",
+    "name": { "str": "storm ammo belt" },
+    "ammo_type": [ ".998" ],
+    "capacity": 100,
+    "count": 100,
+    "default_ammo": "standard_bolt",
+    "linkage": "ammolinkbolt",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": false, "ammo_restriction": { ".998": 100 } } ]
+  }
+]
