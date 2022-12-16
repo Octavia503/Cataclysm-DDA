@@ -107,6 +107,7 @@ extern const flag_id flag_EXO_BOOT_PLATE;
 extern const flag_id flag_EXO_GLOVE_PLATE;
 extern const flag_id flag_EXO_HELMET_GADGET;
 extern const flag_id flag_EXO_HELMET_PLATE;
+extern const flag_id flag_exo_SHOULDER_GADGET;
 extern const flag_id flag_EXO_LARGE_GADGET;
 extern const flag_id flag_EXO_LEG_PLATE;
 extern const flag_id flag_EXO_MEDIUM_GADGET;
